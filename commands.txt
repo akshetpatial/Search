@@ -159,4 +159,103 @@ $ git log -4 --all --graph
   Date:   Sat Mar 4 21:02:40 2023 +0530
 
       Created the Directory Search
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.68 KiB | 1.68 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/akshetpatial/Search.git
+   dd30796..b7c10b9  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit b7c10b9f80c42d5bb00c2ed1a0ac39f21bed62d4 (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 4 21:06:39 2023 +0530
+|
+|     Created the commands.txt file and added some initial Commands
+|
+* commit dd30796c092fcbde76a2cac44737e80ec5b550f1
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 4 21:03:21 2023 +0530
+|
+|     added the LinearSearch.pdf file
+|
+* commit c789c1c4382c66778a884339180ef3de18c42555
+  Author: AKSHET PATIAL <akshet.patial@gmail.com>
+  Date:   Sat Mar 4 21:02:40 2023 +0530
+
+      Created the Directory Search
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit b7c10b9f80c42d5bb00c2ed1a0ac39f21bed62d4 (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 4 21:06:39 2023 +0530
+|
+|     Created the commands.txt file and added some initial Commands
+|
+* commit dd30796c092fcbde76a2cac44737e80ec5b550f1
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 4 21:03:21 2023 +0530
+|
+|     added the LinearSearch.pdf file
+|
+* commit c789c1c4382c66778a884339180ef3de18c42555
+  Author: AKSHET PATIAL <akshet.patial@gmail.com>
+  Date:   Sat Mar 4 21:02:40 2023 +0530
+
+      Created the Directory Search
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+To https://github.com/akshetpatial/Search.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/akshetpatial/Search.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 691 bytes | 5.00 KiB/s, done.
+From https://github.com/akshetpatial/Search
+   b7c10b9..ace8fd3  master     -> origin/master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git merge origin/master
+Updating b7c10b9..ace8fd3
+Fast-forward
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+Everything up-to-date
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
 
