@@ -259,3 +259,243 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/Search/com/akshet/LinearSearch.class
+        modified:   src/com/akshet/LinearSearchinString.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+        out/production/Search/com/akshet/BinarySearch.class
+        out/production/Search/com/akshet/Ceiling_Floor.class
+        out/production/Search/com/akshet/LinearSearchinString.class
+        src/com/akshet/BinarySearch.java
+        src/com/akshet/Ceiling_Floor.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add out/production/Search/com/akshet/LinearSearch.class
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add out/production/Search/com/akshet/LinearSearchString.class src/com/akshet/LinearSearchinString.java
+fatal: pathspec 'out/production/Search/com/akshet/LinearSearchString.class' did not match any files
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add out/production/Search/com/akshet/LinearSearchinString.class src/com/akshet/LinearSearchinString.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/Search/com/akshet/LinearSearch.class
+        new file:   out/production/Search/com/akshet/LinearSearchinString.class
+        modified:   src/com/akshet/LinearSearchinString.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+        out/production/Search/com/akshet/BinarySearch.class
+        out/production/Search/com/akshet/Ceiling_Floor.class
+        src/com/akshet/BinarySearch.java
+        src/com/akshet/Ceiling_Floor.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "created the file LinearSearchinString"
+[master 7c9a252] created the file LinearSearchinString
+ 3 files changed, 43 insertions(+)
+ create mode 100644 out/production/Search/com/akshet/LinearSearchinString.class
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+        out/production/Search/com/akshet/BinarySearch.class
+        out/production/Search/com/akshet/Ceiling_Floor.class
+        src/com/akshet/BinarySearch.java
+        src/com/akshet/Ceiling_Floor.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add out/production/Search/com/akshet/BinarySearch.class src/com/akshet/BinarySearch.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   out/production/Search/com/akshet/BinarySearch.class
+        new file:   src/com/akshet/BinarySearch.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+        out/production/Search/com/akshet/Ceiling_Floor.class
+        src/com/akshet/Ceiling_Floor.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "created the file BinarySearch.java"
+[master 99b2084] created the file BinarySearch.java
+ 2 files changed, 80 insertions(+)
+ create mode 100644 out/production/Search/com/akshet/BinarySearch.class
+ create mode 100644 src/com/akshet/BinarySearch.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+        out/production/Search/com/akshet/Ceiling_Floor.class
+        src/com/akshet/Ceiling_Floor.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add out/production/Search/com/akshet/Ceiling_Floor.class src/com/akshet/Ceiling_Floor.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   out/production/Search/com/akshet/Ceiling_Floor.class
+        new file:   src/com/akshet/Ceiling_Floor.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "created the file Ceiling_Floor.java"
+[master 92ac8d4] created the file Ceiling_Floor.java
+ 2 files changed, 87 insertions(+)
+ create mode 100644 out/production/Search/com/akshet/Ceiling_Floor.class
+ create mode 100644 src/com/akshet/Ceiling_Floor.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinarySearch.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add BinarySearch.pdf
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   BinarySearch.pdf
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "added the file BinarySearch.pdf"
+[master 9d47f7e] added the file BinarySearch.pdf
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 BinarySearch.pdf
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit 9d47f7e49776e13b6baca68a145feebb4fdf2a0d (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:15:09 2023 +0530
+|
+|     added the file BinarySearch.pdf
+|
+* commit 92ac8d4cbe8d14e5b52b16435c16cadcc29946e0
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:14:28 2023 +0530
+|
+|     created the file Ceiling_Floor.java
+|
+* commit 99b2084a44d9859196bdd9b2a9d2bbf9516962c5
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:13:47 2023 +0530
+|
+|     created the file BinarySearch.java
+|
+* commit 7c9a25291ffc471082f86539a22f03a9729e8c46
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:12:00 2023 +0530
+|
+|     created the file LinearSearchinString
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -7 --all --graph
+* commit 9d47f7e49776e13b6baca68a145feebb4fdf2a0d (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:15:09 2023 +0530
+|
+|     added the file BinarySearch.pdf
+|
+* commit 92ac8d4cbe8d14e5b52b16435c16cadcc29946e0
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:14:28 2023 +0530
+|
+|     created the file Ceiling_Floor.java
+|
+* commit 99b2084a44d9859196bdd9b2a9d2bbf9516962c5
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:13:47 2023 +0530
+|
+|     created the file BinarySearch.java
+|
+* commit 7c9a25291ffc471082f86539a22f03a9729e8c46
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 5 22:12:00 2023 +0530
+|
+|     created the file LinearSearchinString
+|
+* commit e6445780d834082a758abd2336b88f1eaacd94ea (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 4 21:23:36 2023 +0530
+|
+|     added some more commands related to fetch and merge in commands.txt file
+|
+* commit ace8fd3c0daabbcd43ebee08df9476940f473920
+| Author: AKSHET PATIAL <44276149+akshetpatial@users.noreply.github.com>
+| Date:   Sat Mar 4 21:09:32 2023 +0530
+|
+|     Created the ReadMe.md file
+|
+* commit b7c10b9f80c42d5bb00c2ed1a0ac39f21bed62d4
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 4 21:06:39 2023 +0530
+|
+|     Created the commands.txt file and added some initial Commands
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+Enumerating objects: 51, done.
+Counting objects: 100% (51/51), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (40/40), 280.95 KiB | 5.30 MiB/s, done.
+Total 40 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), completed with 2 local objects.
+To https://github.com/akshetpatial/Search.git
+   e644578..9d47f7e  master -> master
+
