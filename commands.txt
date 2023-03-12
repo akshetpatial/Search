@@ -872,3 +872,103 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/Search/com/akshet/RotatedSortedArray.class
+        modified:   src/com/akshet/RotatedSortedArray.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/Search/com/akshet/RotatedSortedArray.class
+        modified:   src/com/akshet/RotatedSortedArray.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "modefied RotatedSortedArray.java to search for the target index in a duplicate array"
+[master a57c5b7] modefied RotatedSortedArray.java to search for the target index in a duplicate array
+ 2 files changed, 19 insertions(+), 2 deletions(-)
+ rewrite out/production/Search/com/akshet/RotatedSortedArray.class (79%)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit a57c5b7b91de9de9c2114f9fa7782d70fe4bf10d (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 20:41:35 2023 +0530
+|
+|     modefied RotatedSortedArray.java to search for the target index in a duplicate array
+|
+* commit 659a021c107eb0e13220b34baf5ff0005c5df6cb (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 19:33:02 2023 +0530
+|
+|     added some more comments in RotatedSortedArray.java
+|
+* commit 89783a8036284fdb2fa7699535db5ee85defb486
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 19:29:22 2023 +0530
+|
+|     added commands related to MountainArray,PeakIndexArray,RotatedSortedArray etc
+|
+* commit 057ba0ba55f5f957b9f0107ee393cafb21c27930
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 19:28:27 2023 +0530
+|
+|     added some comments in RotatedSortedArray.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (12/12), 2.83 KiB | 724.00 KiB/s, done.
+To https://github.com/akshetpatial/Search.gitreused 0
+   659a021..a57c5b7  master -> master completed with 4 local objects.
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit a57c5b7b91de9de9c2114f9fa7782d70fe4bf10d (HEAD -> master, origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 20:41:35 2023 +0530
+|
+|     modefied RotatedSortedArray.java to search for the target index in a duplicate array
+|
+* commit 659a021c107eb0e13220b34baf5ff0005c5df6cb
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 19:33:02 2023 +0530
+|
+|     added some more comments in RotatedSortedArray.java
+|
+* commit 89783a8036284fdb2fa7699535db5ee85defb486
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 19:29:22 2023 +0530
+|
+|     added commands related to MountainArray,PeakIndexArray,RotatedSortedArray etc
+|
+* commit 057ba0ba55f5f957b9f0107ee393cafb21c27930
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 19:28:27 2023 +0530
+|
+|     added some comments in RotatedSortedArray.java
+
