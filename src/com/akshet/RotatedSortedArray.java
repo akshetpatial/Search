@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class RotatedSortedArray {
 
+    // This method will not work for duplicated values
+    // We can also do the same by recursion
     public static int RotatedArray(int[] array, int target){
        int index= pivotPoint(array);
        int start;
