@@ -96,18 +96,44 @@ public class RotatedSortedArray {
         }
         return array.length-1;
     }
+
+    public static int CountOFRotatedArray(int[] array){
+
+        int start=0;
+        int end=array.length-1;
+        while(start<=end){
+            int mid = start + (end-start)/2;
+            if(start==mid) {
+                if(array[start]>array[end])
+                    return start;
+                else
+                    return -1;
+            }
+            if(array[mid]>array[mid+1])
+                return mid;
+            if(array[mid]<array[mid-1])
+                return mid-1;
+            if(array[start]>array[mid])
+                end =mid-1;
+            if(array[mid]>array[start])
+                start=mid;
+        }
+
+        return -1;
+    }
+
     public static void main(String[] args){
 
         System.out.println("Enter the size of the array: ");
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
-        System.out.println("Enter the mountain array: ");
+        System.out.println("Enter the Rotated array: ");
         int[] array=new int[size];
 //      4 5 6 7 0 1 2 3   5 1 3
         for(int i=0;i<size;i++){
             array[i] = scan.nextInt();
         }
-        System.out.println("Entered the mountain array is: ");
+        System.out.println("Entered the Rotated array is: ");
         System.out.print("[ ");
         for(int element : array){
             System.out.print(element+" ");
@@ -119,6 +145,9 @@ public class RotatedSortedArray {
 
         int index= RotatedArray(array,target);
         System.out.println(index);
+
+        int count = CountOFRotatedArray(array);
+        System.out.println("Count of Rotated array is: "+ (count+1));
 
     }
 }
