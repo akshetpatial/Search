@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class RotatedSortedArray {
 
-    // This method will not work for duplicated values
     // We can also do the same by recursion
     public static int RotatedArray(int[] array, int target){
        int index= pivotPoint(array);
+        System.out.println("Index: "+index);
        int start;
        int end;
             if(array[index]==target)
@@ -55,7 +55,7 @@ public class RotatedSortedArray {
         return -1;
     }
 
-
+    // This method will not work for duplicated values We need to make some changes to handle the duplicate values numbers
     // This is just very important to find as this is the point where two arrays can be divided
     public static int pivotPoint(int[] array){
         int start=0;
@@ -72,10 +72,27 @@ public class RotatedSortedArray {
                 return mid-1;
             else if(array[mid]>array[mid+1])
                 return mid;
+            /* commenting the code as it will give wrong answer for duplicate values
             else if(array[start]>array[mid])
                 end=mid-1;
             else if(array[start]<=array[mid])
                 start=mid;
+                */
+            //adding some more conditions to check the duplicate values
+            // So we are removing duplicates
+                if (array[start] == array[mid] && array[end]==array[mid]) {
+                    if(array[start]>array[start+1])
+                        return start;
+                    else if(array[end]<array[end-1])
+                        return end-1;
+                    start++;
+                    end--;
+                }
+                //No again checking similar conditions commented onwards line no 74
+                else if(array[start]<array[mid] || (array[start]==array[mid] && array[mid] > array[end]))
+                    start=mid;
+                else
+                    end = mid-1;
         }
         return array.length-1;
     }
