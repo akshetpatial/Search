@@ -54,7 +54,7 @@ public class RotatedSortedArray {
     }
 
 
-    // This is just very important to find as this is the point where two arrays can be divided 
+    // This is just very important to find as this is the point where two arrays can be divided
     public static int pivotPoint(int[] array){
         int start=0;
         int end=array.length-1;
