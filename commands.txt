@@ -1058,4 +1058,229 @@ $ git log -4 --all --graph
 
 
 
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/Search/com/akshet/Searchin2DArray.class
+        src/com/akshet/Searchin2DArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   out/production/Search/com/akshet/Searchin2DArray.class
+        new file:   src/com/akshet/Searchin2DArray.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "Created the Searchin2DArray.java"
+[master cdd5509] Created the Searchin2DArray.java
+ 2 files changed, 84 insertions(+)
+ create mode 100644 out/production/Search/com/akshet/Searchin2DArray.class
+ create mode 100644 src/com/akshet/Searchin2DArray.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit cdd55099dca932f04b71c9a70580824fdd3302c7 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 17 11:08:38 2023 +0530
+|
+|     Created the Searchin2DArray.java
+|
+* commit c371e759390528002c95ac71ca834256cbbc32b6 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 16 01:26:39 2023 +0530
+|
+|     added the commands related to adding the file to the remote branch for SplitArrayLargestSum.java file
+|
+* commit 77b33f906cfa68a224d12649115ecfca2da88da2
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 16 01:23:43 2023 +0530
+|
+|     Created the SplitArrayLargestSum.java
+|
+* commit 9e070033d0dad4cf630c43157b11e2f59d016f2a
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sun Mar 12 23:29:36 2023 +0530
+|
+|     Added the Rotation Count of Rotated Array method
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (12/12), 2.76 KiB | 471.00 KiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/akshetpatial/Search.git
+   c371e75..cdd5509  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/Search/com/akshet/Searchin2DArray.class
+        modified:   src/com/akshet/Searchin2DArray.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/Search/com/akshet/Searchin2DArray.class
+        modified:   src/com/akshet/Searchin2DArray.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "Adeed the findTargetBinary method in Searchin2DArray.java"
+[master b2b9ee0] Adeed the findTargetBinary method in Searchin2DArray.java
+ 2 files changed, 36 insertions(+), 10 deletions(-)
+ rewrite out/production/Search/com/akshet/Searchin2DArray.class (85%)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit b2b9ee0e05c7768179fc492974ff6b395dc9d401 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 17 11:57:05 2023 +0530
+|
+|     Adeed the findTargetBinary method in Searchin2DArray.java
+|
+* commit cdd55099dca932f04b71c9a70580824fdd3302c7 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 17 11:08:38 2023 +0530
+|
+|     Created the Searchin2DArray.java
+|
+* commit c371e759390528002c95ac71ca834256cbbc32b6
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 16 01:26:39 2023 +0530
+|
+|     added the commands related to adding the file to the remote branch for SplitArrayLargestSum.java file
+|
+* commit 77b33f906cfa68a224d12649115ecfca2da88da2
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Thu Mar 16 01:23:43 2023 +0530
+|
+|     Created the SplitArrayLargestSum.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git push origin master
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (12/12), 2.87 KiB | 367.00 KiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/akshetpatial/Search.git
+   cdd5509..b2b9ee0  master -> master
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/Search/com/akshet/Searchin2DArray.class
+        modified:   src/com/akshet/Searchin2DArray.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/Search/com/akshet/Searchin2DSortedArray.class
+        src/com/akshet/Searchin2DSortedArray.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add out/production/Search/com/akshet/Searchin2DArray.class src/com/akshet/Searchin2DArray.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   out/production/Search/com/akshet/Searchin2DArray.class
+        modified:   src/com/akshet/Searchin2DArray.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/Search/com/akshet/Searchin2DSortedArray.class
+        src/com/akshet/Searchin2DSortedArray.java
+
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "Added some comments in Searchin2DArray.java related to the case its using"   [master 55719b6] Added some comments in Searchin2DArray.java related to the case its using
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/Search/com/akshet/Searchin2DSortedArray.class
+        src/com/akshet/Searchin2DSortedArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git add .
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git commit -m "Created file Searchin2DSortedArray.java and Added some optimization"
+[master 4bf1382] Created file Searchin2DSortedArray.java and Added some optimization
+ 2 files changed, 105 insertions(+)
+ create mode 100644 out/production/Search/com/akshet/Searchin2DSortedArray.class
+ create mode 100644 src/com/akshet/Searchin2DSortedArray.java
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@AKSHETISHEREDESKTOP MINGW64 /e/2023_project/Search (master)
+$ git log -4 --all --graph
+* commit 4bf13828570e3eb5abda433d9c1d5cda061d94e9 (HEAD -> master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 18 02:16:57 2023 +0530
+|
+|     Created file Searchin2DSortedArray.java and Added some optimization
+|
+* commit 55719b6d8cc3c2644071db8d016a25f43e11a653
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Sat Mar 18 02:16:00 2023 +0530
+|
+|     Added some comments in Searchin2DArray.java related to the case its using
+|
+* commit b2b9ee0e05c7768179fc492974ff6b395dc9d401 (origin/master)
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 17 11:57:05 2023 +0530
+|
+|     Adeed the findTargetBinary method in Searchin2DArray.java
+|
+* commit cdd55099dca932f04b71c9a70580824fdd3302c7
+| Author: AKSHET PATIAL <akshet.patial@gmail.com>
+| Date:   Fri Mar 17 11:08:38 2023 +0530
+|
 
