@@ -54,7 +54,9 @@ public class Searchin2DArray {
         int[][] TwoDArray= new int[row][col];
 
         System.out.println("Enter the elements of the 2D Array");
-        // 1 2 3 4 5 6 7 8 9   0 1 2 3 4 5 6 7 8 9 10 11
+
+        // In this we can see that the array is sorted row wise and column wise only
+
         // Test Data for Binary Search
         /*  10 20 30 40
             12 25 35 45
