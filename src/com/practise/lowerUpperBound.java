@@ -7,11 +7,9 @@ public class lowerBound {
     public static int lowerBound(int []arr, int n, int x) {
         int start = 0;
         int end = n-1;
+        int mid =0;
         while(start<=end){
-            int mid = end + (start-end)/2;
-//            System.out.println("start"+start);
-//            System.out.println("end"+end);
-//            System.out.println("mid"+mid);
+            mid = start + (end - start) / 2;
             if(mid == 0)
                 return mid;
             // if(mid == end)
@@ -21,8 +19,10 @@ public class lowerBound {
             if(start==end)
                 return start;
             if(arr[mid] <x){
+                System.out.println("here x greater");
                 start = mid+1;
             }else{
+                System.out.println("here x lesser");
                 end = mid;
             }
         }
