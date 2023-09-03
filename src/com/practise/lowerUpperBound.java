@@ -2,7 +2,7 @@ package com.practise;
 
 import java.util.Scanner;
 
-public class lowerBound {
+public class lowerUpperBound {
 
     public static int lowerBound(int []arr, int n, int x) {
         int start = 0;
@@ -28,6 +28,28 @@ public class lowerBound {
         }
         return 0;
     }
+
+    public static int upperBound(int []arr, int n, int x) {
+        int start = 0;
+        int end = n-1;
+
+        while(start<=end){
+            int mid = start + (end -start)/2;
+            if(start==n-1)
+                return n;
+            if(start==end)
+                return end;
+            // if(mid == n-1)
+            //     return n;
+            // if(end==mid)
+            //     return mid;
+            if(arr[mid] > x)
+                end = mid;
+            else
+                start = mid+1;
+        }
+        return n;
+    }
     public static void main(String[] args) {
         System.out.println("Enter the length of the array: ");
         Scanner scan = new Scanner(System.in);
@@ -39,9 +61,11 @@ public class lowerBound {
         System.out.println("Entered array: ");
         for(int ele : arr)
             System.out.print(ele+" ");
-        System.out.println("\nEnter the lower bound target");
+//        System.out.println("\nEnter the lower bound target");
+        System.out.println("\nEnter the Upper bound target");
         int x = scan.nextInt();
-        int ans = lowerBound(arr,n,x);
+//        int ans = lowerBound(arr,n,x);
+        int ans = upperBound(arr,n,x);
         System.out.println(ans);
     }
 }
